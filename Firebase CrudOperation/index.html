@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div id="container" class="bg-white shadow-lg rounded-lg p-8 w-full max-w-md">
+        <h1 class="text-2xl font-bold text-center mb-6 text-gray-700">CRUD Operations</h1>
+        <form action="" class="space-y-4">
+            <div>
+                <label for="firstName" class="block text-sm font-medium text-gray-600">First Name</label>
+                <input 
+                    type="text" 
+                    id="firstName" 
+                    placeholder="Enter your first name" 
+                    class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none">
+            </div>
+
+            <div>
+                <label for="lastName" class="block text-sm font-medium text-gray-600">Last Name</label>
+                <input 
+                    type="text" 
+                    id="lastName" 
+                    placeholder="Enter your last name" 
+                    class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none">
+            </div>
+
+            <div>
+                <label for="rollNum" class="block text-sm font-medium text-gray-600">Roll Number</label>
+                <input 
+                    type="number" 
+                    id="rollNum" 
+                    placeholder="Enter your roll number" 
+                    class="w-full mt-1 px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-400 focus:outline-none">
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <button 
+                    type="button" 
+                    id="create" 
+                    class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 focus:ring-2 focus:ring-blue-300">
+                    Create
+                </button>
+                <button 
+                    type="button" 
+                    id="read" 
+                    class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 focus:ring-2 focus:ring-green-300">
+                    Read
+                </button>
+                <button 
+                    type="button" 
+                    id="update" 
+                    class="bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-yellow-600 focus:ring-2 focus:ring-yellow-300">
+                    Update
+                </button>
+                <button 
+                    type="button" 
+                    id="delete" 
+                    class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 focus:ring-2 focus:ring-red-300">
+                    Delete
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Config Script: Firebase configuration -->
+    <script type="module" src="./config.js"></script>
+</body>
+</html>
